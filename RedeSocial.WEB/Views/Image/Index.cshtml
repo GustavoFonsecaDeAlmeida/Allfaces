@@ -1,0 +1,40 @@
+﻿@model IEnumerable<RedeSocial.WEB.Models.ImageViewModel>
+@{
+    ViewBag.Title = "Postagens";
+}
+
+<br />
+<br />
+<br />
+<br />
+@foreach (var item in Model)
+{
+
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="thumbnail col-sm-12 col-md-12">
+
+                <div class="image col-sm-3 col-md-3">
+                    <p>Foto:</p>
+                    <img src="@Html.DisplayFor(modelItem => item.foto)" width="30%" height="30%" alt="...">
+                </div>
+                <div class="usuario col-sm-3 col-md-3">
+                    <p>Usuario : </p>
+                    <h5>@Html.DisplayFor(modelItem => item.emailUsuario)</h5>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">Like</a> <a href="#" class="btn btn-default" role="button">Denunciar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+        <br />
+}

@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.API", "RedeSocial.API\RedeSocial.API.csproj", "{B52E829A-1CA2-4D4E-8086-2D9EEF998831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.WEB", "RedeSocial.WEB\RedeSocial.WEB.csproj", "{3B117A1A-189D-4051-9F3D-E0A51DA2F317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.Data", "RedeSocial.Data\RedeSocial.Data.csproj", "{01DC8ACA-C694-471A-B345-4A8D3275EFB8}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "StorageEmulator", "StorageEmulator\StorageEmulator.ccproj", "{CF2ECF37-A1E7-4AEF-BF67-E0E4B513364E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole2", "WebRole2\WebRole2.csproj", "{426E089B-7D3E-4C85-AF93-18A0E1C80F1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B52E829A-1CA2-4D4E-8086-2D9EEF998831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52E829A-1CA2-4D4E-8086-2D9EEF998831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52E829A-1CA2-4D4E-8086-2D9EEF998831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52E829A-1CA2-4D4E-8086-2D9EEF998831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B117A1A-189D-4051-9F3D-E0A51DA2F317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B117A1A-189D-4051-9F3D-E0A51DA2F317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B117A1A-189D-4051-9F3D-E0A51DA2F317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B117A1A-189D-4051-9F3D-E0A51DA2F317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DC8ACA-C694-471A-B345-4A8D3275EFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DC8ACA-C694-471A-B345-4A8D3275EFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DC8ACA-C694-471A-B345-4A8D3275EFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DC8ACA-C694-471A-B345-4A8D3275EFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF2ECF37-A1E7-4AEF-BF67-E0E4B513364E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2ECF37-A1E7-4AEF-BF67-E0E4B513364E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2ECF37-A1E7-4AEF-BF67-E0E4B513364E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2ECF37-A1E7-4AEF-BF67-E0E4B513364E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426E089B-7D3E-4C85-AF93-18A0E1C80F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426E089B-7D3E-4C85-AF93-18A0E1C80F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426E089B-7D3E-4C85-AF93-18A0E1C80F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426E089B-7D3E-4C85-AF93-18A0E1C80F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

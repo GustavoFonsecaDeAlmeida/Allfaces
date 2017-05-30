@@ -1,0 +1,135 @@
+﻿@model IEnumerable<RedeSocial.WEB.Models.PostagemViewModel>
+@{
+    ViewBag.Title = "Postagens";
+}
+
+<br />
+<br />
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+@Html.AntiForgeryToken()
+<div class="row">
+    @foreach (var item in Model)
+    {
+
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+            <div class="panel panel-default">
+                <p>Usuario : @Html.DisplayFor(modelItem => item.emailUsuario)</p>
+                @Html.ActionLink("Visitar Perfil", "Details", "Perfil", new { id = item.idUsuario }, null)
+                @if (item.imagem != "Sem Imagem")
+                {
+                    <div class="panel-thumbnail"><img src="@Html.DisplayFor(modelItem => item.imagem)" class="img-responsive"></div>
+
+                }
+
+                <div class="panel-body">
+                    <p class="lead">Postagem</p>
+                    <p>@Html.DisplayFor(modelItem => item.Conteudo)</p>
+
+                    <p>
+
+
+                        <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
+
+                    </p>
+                </div>
+            </div>
+
+
+            <br />
+        </div>
+
+    }
+    <br />
+</div>
+<br />
+<br />
+<br />
+
+
+@*@Html.AntiForgeryToken()
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-12 col-md-12">
+            <div class="thumbnail col-sm-12 col-md-12">
+
+                <div class="usuario col-sm-12 col-md-12">
+                    <p>Usuario : @Html.DisplayFor(modelItem => item.emailUsuario) </p>
+                    @Html.ActionLink("Visitar Perfil", "Details", "Perfil", new { id = item.idUsuario }, null)
+                </div>
+
+                <br />
+
+                @if (item.imagem != "Sem Imagem")
+                {
+                    <div class="image col-sm-3 col-md-3">
+                        <p>Imagem:</p>
+                        <img src="@Html.DisplayFor(modelItem => item.imagem)" width="150px" alt="...">
+                       
+                    </div>
+
+                }
+
+                <div class="caption">
+                    <p>Conteudo:</p>
+                    <p>@Html.DisplayFor(modelItem => item.Conteudo)</p>
+                    
+                    @if (@Session["idUsuario"].ToString() == item.idUsuario)
+                    {
+                        @Html.ActionLink("Deletar", "Delete", "Postagem", new { id = item.id }, IsPost)
+
+                    }
+                </div>
+            </div>
+        </div>
+            <br />
+
+    
+
+
+    }
+    <br />
+</div>*@
+
+
+
+
+<br />
+<br />
+<br />
+@*<div class="row">
+    <div class="col-xs-3 col-md-3">
+        <p>Patrocinio:</p>
+        <a href="#" class="thumbnail">
+            <img src="http://www.knd.com.au/wp-content/uploads/AWS-900x900.png" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-3">
+        <p>Patrocinio:</p>
+        <a href="#" class="thumbnail">
+            <img src="https://www.gca.training/uploads/vendors/logo/TrendMicro-Vendors.png?vid=1444900846" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-3">
+        <p>Patrocinio:</p>
+        <a href="#" class="thumbnail">
+            <img src="https://3.kekantoimg.com/yEuXu1VIrBuTlimX9KNXoxYxTV8=/fit-in/600x600/s3.amazonaws.com/kekanto_pics/pics/263/108263.jpg" alt="...">
+        </a>
+    </div>*@
+
+
+
+</div>
+

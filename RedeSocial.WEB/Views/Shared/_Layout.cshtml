@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - AllFaces Social Network</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/LayotTest.css" />
+    <script type="text/javascript" src="~/Scripts/LayoutTest.js"></script>
+
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="row row-offcanvas row-offcanvas-left">
+
+
+                <!-- sidebar -->
+                <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+
+                    <ul class="nav">
+                        <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                    </ul>
+
+                    
+                    <ul class="list-unstyled hidden-xs" id="sidebar-footer">
+                        <li>
+                            <a href="http://www.bootply.com"><h3>Bootstrap</h3> <i class="glyphicon glyphicon-heart-empty"></i> Bootply</a>
+                        </li>
+                    </ul>
+
+                    <!-- tiny only nav-->
+                    <ul class="nav visible-xs" id="xs-menu">
+                        <li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+                        <li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
+                        <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
+                        <li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
+                    </ul>
+
+                </div>
+                <!-- /sidebar -->
+                <!-- main right col -->
+                <div class="column col-sm-10 col-xs-11" id="main">
+
+                    <!-- top nav -->
+                    <div class="navbar navbar-blue navbar-static-top">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href='@Url.Action("Index", "Home")' class="navbar-brand" href="/"><img width="35" height="35" src="/imagem/logo2.png">Allfaces</a>
+                        </div>
+                        <nav class="collapse navbar-collapse" role="navigation">
+                   
+                            <ul class="nav navbar-nav">
+                          
+                                
+                                <li>
+                                    @Html.Partial("_LoginPartial")
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="active">@Html.Partial("_LoginPartial")</li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="content" class="container-fluid">
+
+                        @RenderBody()
+
+                    </div>
+
+
+                    
+
+
+                    @Scripts.Render("~/bundles/jquery")
+                    @Scripts.Render("~/bundles/bootstrap")
+                    @RenderSection("scripts", required: false)
+</body>
+</html>

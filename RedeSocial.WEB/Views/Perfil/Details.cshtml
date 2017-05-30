@@ -1,0 +1,42 @@
+﻿@model RedeSocial.WEB.Models.PerfilViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes do Perfil</h2>
+
+
+
+<div class="container">
+    <div class="fb-profile">
+        <img align="left" class="fb-image-lg" src="http://lorempixel.com/850/280/nightlife/5/" alt="Profile image example" />
+        @if (Model.fotoPerfil == "SemFotoPerfil")
+        {
+            <img align="right" class="fb-image-profile thumbnail" src="~/Service/Perfil.svg" alt="Profile image example" />
+
+        }
+        else
+        {
+            <img align="right" class="fb-image-profile thumbnail" src="@Html.DisplayFor(model => model.fotoPerfil)" alt="Profile image example" />
+        }
+        
+        <div class="fb-profile-text">
+            
+            <h1>@Html.DisplayFor(model => model.PrimeiroNome) @Html.DisplayFor(model => model.UltimoNome) </h1>
+            @if (Model.idUsuario.ToString() == Session["idUsuario"].ToString())
+            {   
+                <a href="http://localhost:60717/Perfil/Edit/@Model.idUsuario"> <i class="glyphicon glyphicon-pencil"> </i>Editar Perfil </a>
+
+
+            }
+            <p>Apelido : @Model.Apelido</p>
+           
+        </div>
+        
+    </div>
+</div>
+
+
+
+

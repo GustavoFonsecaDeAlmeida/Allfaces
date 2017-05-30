@@ -1,0 +1,13 @@
+D:\NewNew\RedeSocialSolution\RedeSocial.Data\bin\Debug\RedeSocial.Data.dll
+D:\NewNew\RedeSocialSolution\RedeSocial.Data\bin\Debug\RedeSocial.Data.pdb
+D:\NewNew\RedeSocialSolution\RedeSocial.Data\obj\Debug\RedeSocial.Data.dll
+D:\NewNew\RedeSocialSolution\RedeSocial.Data\obj\Debug\RedeSocial.Data.pdb
+E:\NewNew\RedeSocialSolution\RedeSocial.Data\bin\Debug\RedeSocial.Data.dll
+E:\NewNew\RedeSocialSolution\RedeSocial.Data\bin\Debug\RedeSocial.Data.pdb
+E:\NewNew\RedeSocialSolution\RedeSocial.Data\obj\Debug\RedeSocial.Data.dll
+E:\NewNew\RedeSocialSolution\RedeSocial.Data\obj\Debug\RedeSocial.Data.pdb
+D:\NewNew\RedeSocialSolution\RedeSocial.Data\obj\Debug\RedeSocial.Data.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\RedeSocialSolution\RedeSocial.Data\bin\Debug\RedeSocial.Data.dll
+C:\Users\Administrador\Desktop\RedeSocialSolution\RedeSocial.Data\bin\Debug\RedeSocial.Data.pdb
+C:\Users\Administrador\Desktop\RedeSocialSolution\RedeSocial.Data\obj\Debug\RedeSocial.Data.dll
+C:\Users\Administrador\Desktop\RedeSocialSolution\RedeSocial.Data\obj\Debug\RedeSocial.Data.pdb
